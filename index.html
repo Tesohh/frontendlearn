@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+    <div class="overlay" id="overlay">
+        <h3>Searching available Bananas...</h3>
+    </div>
 <!-- Qua c'e la struttura del sito -->
     <div>
         <div class="hero-bg">
@@ -27,7 +30,7 @@
                             <input type="text" name="banana" id="banana">
                             <p>Example: Filvi Bananas</p>
                         </div>
-                    <input type="button" value="Find bananas desperately NOW!!">
+                    <input type="button" value="Find Bananas Now" id="cta-btn">
                     </form>
                 </div>
             </section>
@@ -37,10 +40,19 @@
     <section class="authentic">
         <div class="right-col">
             <h2>Authentic. Filvi.</h2>
-            <p>Our Bananas are sourced in the remote land of Filviland. We even have the rare "Filvi Bananas", praised for their taste and look. </p>
+            <p>Our Bananas are sourced in the remote land of Filviland. We even have the rare "Filvi Bananas", praised for their taste and look. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique accusantium architecto quos, facere magnam facilis assumenda magni perspiciatis possimus accusamus dolorum voluptatum beatae. Ad illum voluptates, ut ea, deserunt amet porro rem assumenda neque quaerat sint quos. Facilis provident nihil reprehenderit, et expedita impedit. Autem alias odio distinctio laboriosam nesciunt animi explicabo, incidunt dolore nulla vero quae excepturi quasi ut, placeat provident iure minima eaque pariatur possimus? Ex obcaecati molestias totam tempore quisquam, consequatur numquam quos aperiam eveniet nisi ullam nostrum provident. Aut fugit inventore eius sunt eaque, perferendis totam consequatur nihil maxime eligendi iure vel atque sequi. Eaque, aperiam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam ad soluta id minus, sit fugiat, sapiente quos vero maxime unde voluptate, at est debitis! Corporis minus provident cupiditate aspernatur maiores magnam nihil officiis, quis deserunt, corrupti nam temporibus ea qui placeat tenetur sapiente odio animi. Totam, praesentium! Delectus quae deserunt consequuntur ipsum commodi nulla distinctio, explicabo odit tenetur, laborum expedita inventore, assumenda laudantium aliquid! Recusandae impedit eos quisquam quaerat sed magni exercitationem esse nemo illum similique alias laborum mollitia, doloribus, blanditiis corrupti deserunt odit consequatur provident praesentium. Dicta doloremque sint vero mollitia? Ex vel eum maxime ad quis eaque. Iusto. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus magni ad tenetur! Exercitationem, dolor perferendis beatae vitae est qui officia quo! Ullam at perferendis unde minus laborum vel eaque assumenda expedita aliquam quisquam ipsam consequuntur, porro, eius minima inventore pariatur. Vel ex tempore, accusantium quas quia iste animi facere ad autem fugiat fugit eaque, distinctio porro possimus commodi consequatur a illum dicta repellat magni dolor dolorem pariatur. Asperiores, doloremque beatae. Similique facere provident ullam veniam dolorum reiciendis eaque temporibus inventore quo, earum quasi laborum molestias. Est, eius asperiores. Illum velit totam ea nisi consequuntur commodi sint necessitatibus distinctio amet aliquam!</p>
         </div>
         <img class="piatto-banana" src="assets/cina.jfif" alt="A filvi banana on a plate.">
     </section>
+
+    <script>
+       let btn = document.getElementById('cta-btn');
+       let overlay = document.getElementById('overlay');
+       btn.addEventListener('click', () => {
+           overlay.style.display = 'grid';
+           overlay.classList.add('animate-overlay');
+       });
+    </script>
 </body>
 </html>
 <!-- ciao asdasdasd-->
